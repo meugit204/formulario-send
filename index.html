@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="formulario-contato">
+        <div class="title-form">
+            <h1>Entre em contato</h1>
+        </div>
+      <form
+        action="https://formsubmit.co/ricardo.dev.of@gmail.com"
+        method="POST"
+      >
+        <input type="text" name="name" required placeholder="Nome" />
+        <input type="email" name="email" required placeholder="Email" />
+        <textarea name="message" placeholder="Menssagem"></textarea>
+        <button type="submit">ENVIAR</button>
+
+        <!--tela de messagem de email enviado-->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://meugit204.github.io/formulario-send/sucesso"
+        />
+        <!---------->
+
+        <!--Pra receber o formulario em outro email tambem-->
+        <!-- <input type="hidden" name="_cc" value="email@gmail.com"> -->
+        <!--------->
+        <!--Menssagem de resposta do email enviado-->
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Recebemos sua menssagem, obrigada pelo contato e logo responderemos!"
+        />
+        <!------->
+        <!--remove o captcha-->
+        <input type="hidden" name="_captcha" value="false" />
+        <!------->
+      </form>
+    </div><!--formulario de contato-->
+  </body>
+</html>
