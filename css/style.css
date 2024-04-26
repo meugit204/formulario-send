@@ -29,19 +29,24 @@ body {
   min-width: 320px;
   width: 100%;
   padding: 80px 20px;
-  gap: 21px;
+  gap: 31px;
   border-radius: 5px;
-  background-color: #182861;
+  background-color: #ffffff;
 }
 form input {
   width: 100%;
   height: 40px;
   padding-left: 5px;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid #9c9c9c;
 }
 form input:focus {
   border: 3px solid #6a89fa;
+}
+.container-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 textarea {
   width: 100%;
@@ -49,7 +54,7 @@ textarea {
   height: 150px;
   padding: 5px;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid #9c9c9c;
 }
 textarea:focus {
   border: 3px solid #6a89fa;
@@ -60,4 +65,13 @@ form button {
   background-color: #000;
   color: #fff;
   border: 0;
+}
+.span-required {
+  color: #e63636;
+  font-size: 14px;
+  display: none;
+  font-weight: normal;
+
+  position: absolute;
+  top: 43px;
 }

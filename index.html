@@ -8,15 +8,38 @@
   </head>
   <body>
     <div class="formulario-contato">
-        <div class="title-form">
-            <h1>Entre em contato</h1>
-        </div>
+      <div class="title-form">
+        <h1>Entre em contato</h1>
+      </div>
       <form
         action="https://formsubmit.co/ricardo.dev.of@gmail.com"
         method="POST"
       >
-        <input type="text" name="name" required placeholder="Nome" />
-        <input type="email" name="email" required placeholder="Email" />
+        <div class="container-form">
+          <input
+          class="required"
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Nome"
+          />
+          <span class="span-required"
+            >Nome deve ter no minimo 3 caracteres</span
+          >
+        </div>
+        <div class="container-form">
+          <input
+          class="required"
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Email"
+          />
+          <span class="span-required">Digite um email válido</span>
+        </div>
+
         <textarea name="message" placeholder="Menssagem"></textarea>
         <button type="submit">ENVIAR</button>
 
@@ -42,6 +65,8 @@
         <input type="hidden" name="_captcha" value="false" />
         <!------->
       </form>
-    </div><!--formulario de contato-->
+    </div>
+    <!--formulario de contato-->
+    <script src="js/valida-form.js"></script>
   </body>
 </html>
