@@ -38,7 +38,8 @@ form input {
   height: 40px;
   padding-left: 5px;
   outline: none;
-  border: 1px solid #9c9c9c;
+  border: none;
+  border-bottom: 2px solid #9c9c9c;
 }
 form input:focus {
   border: 3px solid #6a89fa;
@@ -54,7 +55,8 @@ textarea {
   height: 150px;
   padding: 5px;
   outline: none;
-  border: 1px solid #9c9c9c;
+  border: none;
+  border-bottom: 2px solid #9c9c9c;
 }
 textarea:focus {
   border: 3px solid #6a89fa;
@@ -62,7 +64,7 @@ textarea:focus {
 form button {
   height: 40px;
   cursor: pointer;
-  background-color: #000;
+  background-color: #391be4;
   color: #fff;
   border: 0;
 }
@@ -71,7 +73,6 @@ form button {
   font-size: 14px;
   display: none;
   font-weight: normal;
-
   position: absolute;
   top: 43px;
 }

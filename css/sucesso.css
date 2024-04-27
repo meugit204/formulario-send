@@ -26,18 +26,18 @@
   }
   .box-icon {
     background-color: #3562ff;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
-    top: -50px;
+    top: -40px;
     left: 50%;
     transform: translate(-50%, 0);
   }
   .box-icon i{
-      font-size: 45px;
+      font-size: 40px;
       color: #fff;
-      line-height: 100px;
+      line-height: 80px;
       text-align: center;
   }
   .enviado h1 {
